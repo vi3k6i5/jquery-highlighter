@@ -3,7 +3,7 @@
 * Copyright 2013 jQuery Highlighter Foundation and other contributors; Licensed MIT */
 (function( $ ) {
  
-	$.fn.highlight = function() {
+	$.fn.highlight = function(options) {
 
 		var getShadowEffect = function(shadow, customShadow) {
 			var shadowEffect = '';
@@ -39,7 +39,7 @@
 			return transitionEffect;
 		}
 		
-		return this.each(function(options) {
+		return this.each(function() {
 			var element = this,
 
 				settings = $.extend({
@@ -60,6 +60,8 @@
 			transitionEffect = getTransitionEffect(settings.transition, settings.period),
 			
 			shadowEffect = getShadowEffect(settings.shadow, settings.customShadow),
+
+			transitionTime = (settings.period.replace ( /[^\d.]/g, '' )) * 1000,
 			
 			removeShadow = function() {
 				$(element).css({
@@ -89,8 +91,8 @@
 				setTimeout(function() { 
 					resetShadow();
 					removeTransition();
-				}, 1000);
-			}, 1000);
+				}, transitionTime);
+			}, transitionTime);
 		});
 	};
 }( jQuery ));
