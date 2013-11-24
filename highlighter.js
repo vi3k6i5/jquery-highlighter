@@ -42,20 +42,24 @@
 		return this.each(function() {
 			var element = this,
 
-				settings = $.extend({
-					shadow: {
-						sInside: true,
-						sOutside: true,
-						sHshadow: '0px',
-						sVshadow: '0px',
-						sBlur: '5px',
-						sSpread: '0px',
-						sColor: '#0000FF'
-					},
-					customShadow: '',
-					transition: 'box-shadow',
-					period: '1s'
-				}, options),
+				settings = $.extend(
+					true,
+					{
+						shadow: {
+							sInside: true,
+							sOutside: true,
+							sHshadow: '0px',
+							sVshadow: '0px',
+							sBlur: '5px',
+							sSpread: '0px',
+							sColor: '#0000FF'
+						},
+						customShadow: '',
+						transition: 'box-shadow',
+						period: '1s'
+					}, 
+					options
+				),
 
 			transitionEffect = getTransitionEffect(settings.transition, settings.period),
 			
