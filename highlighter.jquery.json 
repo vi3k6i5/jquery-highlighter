@@ -1,0 +1,29 @@
+{
+  "name": "highlighter",
+  "version": "1.0.0",
+  "title": "Highlighter",
+  "description": "A jQuery plugin that adds delight to highlighting elements on a page",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "highlight",
+    "elements",
+    "input",
+    "select",
+    "multiple",
+  ],
+  "author": {
+    "name": "Vikash Singh",
+    "email": "vikash.duliajan@gmail.com",
+    "url": "https://plus.google.com/+VikashSingh"
+  },
+  "licenses": [
+    {
+      "type": "MIT-LICENSE",
+      "url": "https://github.com/vi3k6i5/jquery-highlighter/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "jquery" : ">=1.9.0"
+  }
+}
