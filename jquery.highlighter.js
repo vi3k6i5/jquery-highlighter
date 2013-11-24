@@ -1,4 +1,4 @@
-/*! jQuery Highlighter - v1.0.1 - 2013-11-23
+/*! jQuery Highlighter - v1.0.4 - 2013-11-23
 * Copyright 2013 jQuery Highlighter Foundation and other contributors; Licensed MIT */
 (function( $ ) {
  
