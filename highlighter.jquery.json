@@ -1,6 +1,6 @@
 {
     "name": "highlighter",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "title": "Highlighter",
     "description": "A jQuery plugin that adds delight to highlighting elements on a page",
     "keywords": [
@@ -25,5 +25,8 @@
     ],
     "dependencies": {
         "jquery": ">=1.9.0"
-    }
+    },
+	"homepage": "https://github.com/vi3k6i5/jquery-highlighter",
+  	"docs": "https://github.com/vi3k6i5/jquery-highlighter",
+  	"demo": "http://vi3k6i5.blogspot.in/2013/11/highlight-html-element-on-page.html"
 }
